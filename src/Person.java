@@ -2,11 +2,13 @@ public class Person {
     private String name;
     private String surname;
     private String email;
+    private int age;
 
-    public Person(String name, String surname, String email) {
+    public Person(String name, String surname, String email, int age) {
         this.name = name;
         this.surname = surname;
         this.email = email;
+        this.age = age;
     }
 
     public String getName() {
@@ -15,6 +17,14 @@ public class Person {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getAge() {
+        return age;
     }
 
     public String getSurname() {
@@ -39,6 +49,8 @@ public class Person {
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", email='" + email + '\'' +
+                ", age='" + age + '\'' +
+
                 '}';
     }
 }
