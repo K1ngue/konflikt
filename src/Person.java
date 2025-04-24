@@ -1,10 +1,12 @@
 public class Person {
     private String name;
     private String surname;
+    private String email;
 
-    public Person(String name, String surname) {
+    public Person(String name, String surname, String email) {
         this.name = name;
         this.surname = surname;
+        this.email = email;
     }
 
     public String getName() {
@@ -23,11 +25,20 @@ public class Person {
         this.surname = surname;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
+                ", email='" + email + '\'' +
                 '}';
     }
 }
